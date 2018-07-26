@@ -38,9 +38,10 @@ gulp.task('js:concat', function() {
         './node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
         './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
         './node_modules/scrollreveal/dist/scrollreveal.min.js',
+        './node_modules/lazysizes/lazysizes.min.js',
         './dist/js/creative.min.js'
     ])
-        .pipe(concat('all-scripts.min.js'))
+        .pipe(concat('scripts.min.js'))
         .pipe(gulp.dest('./dist/js'));
 });
 
